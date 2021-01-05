@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="topBar">
+            <div id="menu" class="menuButton" onclick="slideOpen();">
+                <img class="menuPic" src="Images/icons8-menu-50.png">
+            </div>
+            <h3 class="myName">Kevin Wang</h3>
+
+            <nav class="pageLinksContainer">
+                <ul>
+                    <li><a href="#aboutNav">About Me</a></li>
+                    <li><a href="#projectNav">My Projects</a></li>
+                    <li><a href="#contactNav">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav id="sb" class="sidebar">
+            <ul>
+                <li><a href="#aboutNav" onclick="slideClose();">About Me</a></li>
+                <li><a href="#projectNav" onclick="slideClose();">My Projects</a></li>
+                <li><a href="#contactNav" onclick="slideClose();">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="pageTopSpacer"></div>
+
+        <div class="aboutMeContainer">
+            <div class="greetingContainer">
+                <h1>Hello there, I'm Kevin.</h1>
+                <h2>I'm a <span class="webDevUnderline">web developer.</span></h2>
+            </div>
+
+            <div id="aboutNav"></div>
+
+            <h2 id="aboutMe"><span class="headerHighlight">About Me</span></h2>
+            <p>Hello, my name is Kevin.</p>
+        </div>
+
+        <div id="projectNav"></div>
+
+        <div class="projectContainer">
+            <h2 id="myProjects"><span class="headerHighlight">My Projects</span></h2>
+        
+            <div class="cardContainer">
+                <div class="projectCard">
+                    <img class="projectPic" src="https://wallpapercave.com/wp/wp4813183.jpg">
+                    <p>Here is this project. I worked on it with 1 and 2. The challenging part was blah blah blah. Thanks for coming to my ted talk.</p>
+                    <a class="githubLink" href="https://github.com/DefNotKevinW" target="_blank">GITHUB</a>
+                </div>
+
+                <div class="projectCard">
+                    <img class="projectPic" src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg">
+                    <p>Here is this project. I worked on it with 1 and 2. The challenging part was blah blah blah. Thanks for coming to my ted talk.</p>
+                    <a class="githubLink" href="https://github.com/DefNotKevinW" target="_blank">GITHUB</a>
+                </div>
+
+                <div class="projectCard">
+                    <img class="projectPic" src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg">
+                    <p>Here is this project. I worked on it with 1 and 2. The challenging part was blah blah blah. Thanks for coming to my ted talk.</p>
+                    <a class="githubLink" href="https://github.com/DefNotKevinW" target="_blank">GITHUB</a>
+                </div>
+
+                <div class="projectCard">
+                    <img class="projectPic" src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg">
+                    <p>Here is this project. I worked on it with 1 and 2. The challenging part was blah blah blah. Thanks for coming to my ted talk.</p>
+                    <a class="githubLink" href="https://github.com/DefNotKevinW" target="_blank">GITHUB</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="contactNav"></div>
+
+        <div class="contactMeContainer">
+            <h2 id="contactMe"><span class="headerHighlight">Contact Me</span></h2>
+            <ul>
+                <li><a href="https://github.com/DefNotKevinW" target="_blank"><img class="githubIcon" src="Images/GitHub-Mark-64px.png"></a></li>
+                <li><a>Résumé</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+* {box-sizing:border-box}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.pageTopSpacer {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+#aboutNav {
+    display: block;
+    height: 70px;
+    width: 100%;
+}
+
+#projectNav {
+    display: block;
+    height: 70px;
+    width: 100%;
+}
+
+#contactNav {
+    display: block;
+    height: 70px;
+    width: 100%;
+}
+
+/*  
+Colors to use:
+#E27D60 (terracotta)
+#85DCB0 (lighter green)
+#E8A87C (lighter orange)
+#C38D9E (pinkish)
+#41B3A3 (darker green)
+*/
+
+/* STYLING FOR HEADER SECTION */
+/* Includes the nav bar, menu button and sidebar. */
+
+body {
+    background-color: #FAFAFA;
+}
+
+header {
+    display: block;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    background:#FAFAFA;
+    z-index: 1;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myName {
+    padding-left: 2.2rem;
+}
+
+.pageLinksContainer {
+    padding-right: 1.2rem;
+}
+
+.pageLinksContainer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pageLinksContainer a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.pageLinksContainer a:hover, .pageLinksContainer a:active {
+    color: #E8A87C;
+}
+
+.menuButton {
+    display: none;
+    margin-right: auto;
+    margin-left: 1.6rem;
+    margin-top: 1.6rem;
+}
+.menuButton:hover {
+    cursor: pointer;
+}
+.menuPic {
+    width: 1.85rem;
+}
+
+.sidebar {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 0px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FAFAFA;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.sidebar li {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sidebar a:hover, .sidebar a:active {
+    color: #E8A87C;
+}
+
+@media screen and (max-width: 800px) {
+    .topBar {
+        justify-content: center;
+    }
+
+    .myName {
+        padding-left: 0;
+        padding-right: 3.8rem;
+        margin-right: auto;
+    }
+
+    .pageLinksContainer {
+        display: none;
+    }
+
+    .menuButton {
+        display: block;
+        align-self: flex-start;
+    }
+}
+
+/* STYLING FOR MAIN CONTENT */
+/* Includes the "About Me" and "My Projects" section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#FAFAFA;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.7rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    max-width: 43.75rem;
+}
+
+#aboutMe {
+    align-self: center;
+}
+
+.webDevUnderline {
+    display: inline-block;
+    position: relative;
+}
+.webDevUnderline::after {
+    content: "";
+    background: #41b3a4a8;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: .6rem;
+    margin-top: -.6rem;
+    margin-left: 0rem;
+    z-index: 0;
+}
+
+.headerHighlight {
+    background-color: #E27D60;
+    color: white;
+    padding: 0.31rem 0.625rem;
+}
+
+#myProjects {
+    text-align: center;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 0.8fr);
+    grid-template-rows: repeat(2, 0.8fr);
+    row-gap: 3.125rem;
+    column-gap: 1.875rem;
+}
+
+.projectCard {
+    padding: 1.25rem;
+    width: 100%;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.2);
+}
+
+.projectPic {
+    width:100%;
+}
+
+.githubLink {
+    padding: 0.5rem;
+    background-color: #C38D9E;
+    color: white;
+    text-decoration: none;
+}
+
+.githubLink:hover, .githubLink:active {
+    color: #85DCB0;
+}
+
+@media screen and (max-width: 1165px) {
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectCard {
+        max-width: 45rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .projectCard {
+        padding: 1.25rem 0.5rem;
+    }
+}
+
+/* STYLING FOR FOOTER SECTION */
+/* Includes the "Contact Me" section. */
+
+.contactMeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#FAFAFA;
+}
+
+.contactMeContainer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.githubIcon {
+    width: 75%;
+}
+
+.githubIcon:hover, .githubIcon:active {
+    opacity: 70%;
+}
+
+.contactMeContainer a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contactMeContainer a:hover, .contactMeContainer a:active {
+    opacity: 70%;
+}
