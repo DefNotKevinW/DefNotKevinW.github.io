@@ -33,7 +33,7 @@ body {
     width: 100%;
 }
 
-@media only screen and (max-width: 1165px) {
+@media only screen and (max-width: 413px) {
     .pageTopSpacer {
         display: block;
         width: 100%;
@@ -85,7 +85,7 @@ header {
 }
 
 .myName {
-    padding-left: 35.2px;
+    padding-left: 27px;
 }
 
 .pageLinksContainer {
@@ -163,7 +163,7 @@ header {
     color: #E8A87C;
 }
 
-@media only screen and (max-width: 1165px) {
+@media only screen and (max-width: 700px) {
     .topBar {
         justify-content: center;
     }
@@ -181,6 +181,14 @@ header {
     .menuButton {
         display: block;
         align-self: flex-start;
+    }
+
+    .menuPic {
+        width: 30px
+    }
+
+    .sidebar a {
+        font-size: 2rem;
     }
 }
 
@@ -282,46 +290,44 @@ p {
     color: #85DCB0;
 }
 
-@media only screen and (max-width: 1165px) {
-    main {
-        max-width: 100%;
-    }
-
+@media only screen and (max-width: 800px) {
     .aboutMeContainer {
-        max-width: 100%;
+        width: 90%;
     }
 
     .cardContainer {
         display: flex;
         flex-direction: column;
     }
+}
 
+@media only screen and (max-width: 413px) {
     .projectCard {
         max-width: 1000px;
     }
 
     h1 {
-        font-size: 3.4rem;
+        font-size: 2.4rem;
     }
     
     h2 {
-        font-size: 3rem;
+        font-size: 1.8rem;
     }
     
     h3 {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .githubLink {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 413px) {
     .projectCard {
         padding: 20px 8px;
     }
@@ -363,8 +369,8 @@ p {
     background-color: #E27D60;
 }
 
-@media only screen and (max-width: 1165px) {
+@media only screen and (max-width: 413px) {
     .resumeLink {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
