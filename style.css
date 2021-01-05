@@ -33,6 +33,26 @@ body {
     width: 100%;
 }
 
+@media only screen and (max-width: 1165px) {
+    .pageTopSpacer {
+        display: block;
+        width: 100%;
+        height: 130px;
+    }
+    
+    #aboutNav {
+        display: block;
+        height: 85px;
+        width: 100%;
+    }
+    
+    #projectNav {
+        display: block;
+        height: 85px;
+        width: 100%;
+    }
+}
+
 /*  
 Colors to use:
 #E27D60 (terracotta)
@@ -94,14 +114,14 @@ header {
 .menuButton {
     display: none;
     margin-right: auto;
-    margin-left: 25.6px;
-    margin-top: 25.6px;
+    margin-left: 32px;
+    margin-top: 28px;
 }
 .menuButton:hover {
     cursor: pointer;
 }
 .menuPic {
-    width: 30px;
+    width: 45px;
 }
 
 .sidebar {
@@ -194,7 +214,7 @@ h3 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .aboutMeContainer {
@@ -259,6 +279,7 @@ p {
     background-color: #C38D9E;
     color: white;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .githubLink:hover, .githubLink:active {
@@ -276,11 +297,11 @@ p {
     }
 
     h1 {
-        font-size: 3.2rem;
+        font-size: 3.4rem;
     }
     
     h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     
     h3 {
@@ -288,6 +309,10 @@ p {
     }
 
     p {
+        font-size: 1.5rem;
+    }
+
+    .githubLink {
         font-size: 1.5rem;
     }
 }
@@ -311,32 +336,30 @@ p {
 
 .contactMeContainer ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-.githubIcon {
-    width: 75%;
-}
-
-.githubIcon:hover, .githubIcon:active {
-    opacity: 70%;
-}
-
-.contactMeContainer a {
+.resumeLink {
     text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
+    color: #E27D60;
+    font-size: 1.2rem;
     font-weight: 600;
+    padding: 8px;
+    margin: 5px;
+    border: 3px solid #E27D60;
 }
 
-.contactMeContainer a:hover, .contactMeContainer a:active {
-    opacity: 70%;
+.resumeLink:hover, .resumeLink:active {
+    color: #85DCB0;
+    background-color: #E27D60;
 }
 
 @media only screen and (max-width: 1165px) {
-    .contactMeContainer a {
-        font-size: 2rem;
+    .resumeLink {
+        font-size: 1.5rem;
     }
 }
