@@ -103,7 +103,7 @@ header {
     padding: 8px 16px;
     text-decoration: none;
     color: black;
-    font-size: 1.5em;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -155,7 +155,7 @@ header {
 .sidebar a {
     text-decoration: none;
     color: black;
-    font-size: 3em;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
@@ -198,19 +198,19 @@ main {
 }
 
 h1 {
-    font-size: 3.2em;
+    font-size: 2.7rem;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 2.3em;
+    font-size: 1.7rem;
 }
 
 p {
-    font-size: 1.8em;
+    font-size: 1.3rem;
 }
 
 .aboutMeContainer {
@@ -271,11 +271,11 @@ p {
 }
 
 .githubLink {
-    padding: 8px;
+    padding: 4px 5px;
     background-color: #C38D9E;
     color: white;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1rem;
 }
 
 .githubLink:hover, .githubLink:active {
@@ -283,6 +283,14 @@ p {
 }
 
 @media only screen and (max-width: 1165px) {
+    main {
+        max-width: 100%;
+    }
+
+    .aboutMeContainer {
+        max-width: 100%;
+    }
+
     .cardContainer {
         display: flex;
         flex-direction: column;
@@ -293,23 +301,23 @@ p {
     }
 
     h1 {
-        font-size: 3.9em;
+        font-size: 3.4rem;
     }
     
     h2 {
-        font-size: 3.5em;
+        font-size: 3rem;
     }
     
     h3 {
-        font-size: 2.8em;
+        font-size: 2.3rem;
     }
 
     p {
-        font-size: 2em;
+        font-size: 1.5rem;
     }
 
     .githubLink {
-        font-size: 2em;
+        font-size: 1.5rem;
     }
 }
 
@@ -328,6 +336,7 @@ p {
     align-items: center;
     justify-content: center;
     background-color:#FAFAFA;
+    margin-bottom: 50px;
 }
 
 .contactMeContainer ul {
@@ -342,7 +351,7 @@ p {
 .resumeLink {
     text-decoration: none;
     color: #E27D60;
-    font-size: 1.7em;
+    font-size: 1.2rem;
     font-weight: 600;
     padding: 8px;
     margin: 5px;
@@ -356,6 +365,6 @@ p {
 
 @media only screen and (max-width: 1165px) {
     .resumeLink {
-        font-size: 2em;
+        font-size: 1.5rem;
     }
 }
