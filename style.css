@@ -65,11 +65,11 @@ header {
 }
 
 .myName {
-    padding-left: 2.2rem;
+    padding-left: 35.2px;
 }
 
 .pageLinksContainer {
-    padding-right: 1.2rem;
+    padding-right: 19.2px;
 }
 
 .pageLinksContainer ul {
@@ -80,7 +80,7 @@ header {
 
 .pageLinksContainer a {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     text-decoration: none;
     color: black;
     font-size: 1rem;
@@ -94,14 +94,14 @@ header {
 .menuButton {
     display: none;
     margin-right: auto;
-    margin-left: 1.6rem;
-    margin-top: 1.6rem;
+    margin-left: 25.6px;
+    margin-top: 25.6px;
 }
 .menuButton:hover {
     cursor: pointer;
 }
 .menuPic {
-    width: 1.85rem;
+    width: 30px;
 }
 
 .sidebar {
@@ -128,7 +128,7 @@ header {
 }
 
 .sidebar li {
-    margin: 0.5rem 0;
+    margin: 8px 0;
     text-align: center;
 }
 
@@ -143,14 +143,14 @@ header {
     color: #E8A87C;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1165px) {
     .topBar {
         justify-content: center;
     }
 
     .myName {
         padding-left: 0;
-        padding-right: 3.8rem;
+        padding-right: 61px;
         margin-right: auto;
     }
 
@@ -173,7 +173,7 @@ main {
     align-items: center;
     justify-content: center;
     background-color:#FAFAFA;
-    max-width: 90rem;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -199,7 +199,7 @@ p {
     justify-content: center;
     align-items: flex-start;
     width: 50%;
-    max-width: 43.75rem;
+    max-width: 700px;
 }
 
 #aboutMe {
@@ -216,16 +216,16 @@ p {
     position: absolute;
     display: block;
     width: 100%;
-    height: .6rem;
-    margin-top: -.6rem;
-    margin-left: 0rem;
+    height: 9.6px;
+    margin-top: -9.6px;
+    margin-left: 0;
     z-index: 0;
 }
 
 .headerHighlight {
     background-color: #E27D60;
     color: white;
-    padding: 0.31rem 0.625rem;
+    padding: 5px 10px;
 }
 
 #myProjects {
@@ -236,14 +236,14 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 0.8fr);
     grid-template-rows: repeat(2, 0.8fr);
-    row-gap: 3.125rem;
-    column-gap: 1.875rem;
+    row-gap: 50px;
+    column-gap: 30px;
 }
 
 .projectCard {
-    padding: 1.25rem;
+    padding: 20px;
     width: 100%;
-    box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .projectPic {
@@ -251,7 +251,7 @@ p {
 }
 
 .githubLink {
-    padding: 0.5rem;
+    padding: 8px;
     background-color: #C38D9E;
     color: white;
     text-decoration: none;
@@ -268,13 +268,13 @@ p {
     }
 
     .projectCard {
-        max-width: 45rem;
+        max-width: 720px;
     }
 }
 
 @media screen and (max-width: 750px) {
     .projectCard {
-        padding: 1.25rem 0.5rem;
+        padding: 20px 8px;
     }
 }
 
