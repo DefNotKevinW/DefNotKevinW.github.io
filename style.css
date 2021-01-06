@@ -4,6 +4,18 @@
     scroll-behavior: smooth;
 }
 
+/*  
+Colors to use:
+#E27D60 (terracotta)
+#85DCB0 (lighter green)
+#E8A87C (lighter orange)
+#C38D9E (pinkish)
+#41B3A3 (darker green)
+*/
+
+/* STYLING FOR HEADER SECTION */
+/* Includes the nav bar, menu button and sidebar. */
+
 body {
     margin: 0;
     font-family: "Ubuntu", sans-serif;
@@ -52,18 +64,6 @@ body {
         width: 100%;
     }
 }
-
-/*  
-Colors to use:
-#E27D60 (terracotta)
-#85DCB0 (lighter green)
-#E8A87C (lighter orange)
-#C38D9E (pinkish)
-#41B3A3 (darker green)
-*/
-
-/* STYLING FOR HEADER SECTION */
-/* Includes the nav bar, menu button and sidebar. */
 
 body {
     background-color: #FAFAFA;
@@ -117,6 +117,7 @@ header {
     margin-left: 32px;
     margin-top: 28px;
 }
+
 .menuButton:hover {
     cursor: pointer;
 }
@@ -280,13 +281,15 @@ p {
 
 .githubLink {
     padding: 4px 5px;
-    background-color: #C38D9E;
-    color: white;
+    color: #C38D9E;
+    border: 2px solid #C38D9E;
     text-decoration: none;
     font-size: 1rem;
+    font-weight: 600;
 }
 
 .githubLink:hover, .githubLink:active {
+    background-color: #C38D9E;
     color: #85DCB0;
 }
 
